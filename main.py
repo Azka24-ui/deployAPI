@@ -29,8 +29,6 @@ def read_item(number_id: int):
         raise HTTPException(status_code=404, detail="waduh, data yang lu cari gada bro ,maap")
     return filter_data.to_dict(orient="records")
 
-#create object/instance for fastAPI class
-app = FastAPI()
 
 #create API key
 API_Key = "hck024data"
